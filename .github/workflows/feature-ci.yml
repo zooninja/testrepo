@@ -1,0 +1,10 @@
+name: feature-ci
+# Exists only on this branch: push runs it, but workflow_dispatch and schedule would not.
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo feature
