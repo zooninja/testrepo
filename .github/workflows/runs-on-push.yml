@@ -1,0 +1,10 @@
+name: runs-on-push
+# Control: runs on every push to main.
+on:
+  push:
+    branches: [main]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "triggered by ${{ github.event_name }} on ${{ github.ref_name }}"

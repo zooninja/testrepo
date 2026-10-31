@@ -1,0 +1,8 @@
+name: singular
+# Never runs: the folder must be .github/workflows (plural).
+on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo never

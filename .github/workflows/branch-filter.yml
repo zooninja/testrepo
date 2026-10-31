@@ -1,0 +1,10 @@
+name: branch-filter
+# Never runs here: the branch filter says master, the branch is main.
+on:
+  push:
+    branches: [master]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo never

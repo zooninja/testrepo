@@ -1,0 +1,8 @@
+name: nested
+# Never runs: GitHub does not read workflows in subfolders of .github/workflows.
+on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo never

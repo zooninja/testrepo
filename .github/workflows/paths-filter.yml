@@ -1,0 +1,11 @@
+name: paths-filter
+# Runs only when a file under src/ changes.
+on:
+  push:
+    branches: [main]
+    paths: ['src/**']
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "src changed"

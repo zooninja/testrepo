@@ -1,0 +1,9 @@
+name: manual
+# Only runs when started by hand (Actions tab, Run workflow).
+on:
+  workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo manual
